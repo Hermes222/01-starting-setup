@@ -4,11 +4,13 @@ import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 function ExpenseItem(props) {
   const [title,setTitle] = useState(props.title);
+  console.log('ExpenseItem evaluated by react');
     
    function clickHandler (){
       setTitle('Updated');
     console.log(title);
-   }
+   };
+   
   return (
     <Card className="expense-item">
       <div>
